@@ -1,0 +1,226 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.head {
+    min-height: 900px;
+    background: url('../img/green-mamba-min.jpg') center center/cover no-repeat;
+    padding: 20px 0 30px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 60%;
+    height: 45px;
+    background: linear-gradient(to bottom, #00cc99 0%, #33cc33 100%);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 38px;
+    border-radius: 50px;
+    color: aqua;
+    box-shadow: 5px 5px 5px inset;
+}
+
+.header br {
+    display: none;
+}
+
+.first-site {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.first-site__img {
+    width: 40%;
+}
+
+.first-site img {
+    width: 100%;
+
+}
+
+.first-site__descr {
+    background: rgba(55,72,103, 0.6);
+    width: 60%;
+    height: 241px;
+    margin-left: 200px;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.title {
+    font-size: 30px;
+    line-height: 10px;
+    color: #E29839;
+}
+
+.descr {
+    color: honeydew;
+}
+.descr ul {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: left;
+    width: 70%;
+}
+
+a {
+    margin-top: 10px;
+    display: block;
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+
+
+.achievements {
+    width: 100%;
+    min-height: 900px;
+    background: url('../img/Dendroaspis-min.jpg') center center/cover no-repeat;
+    padding: 30px 0 30px 0;
+    
+}
+
+.achievements .achievements__img img {
+    width: 100%;
+}
+
+.contacts {
+    height: 100px;
+    background: linear-gradient(to bottom, #003300 0%, #00ff00 100%);
+    padding: 30px;
+}
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone {
+    display: block;
+    color: #006600;
+    font-size: 20px;
+    font-weight: 700;
+}
+.main-btn {
+    border: none;
+    display: block;
+    background: linear-gradient(to bottom, #ff9900 0%, #ff0000 100%);
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #1B2B34;
+    color: #E29839;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .first-site__descr {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .first-site {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-site__img {
+        width: 50%;
+    }
+    .first-site__descr {
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 218px;
+    }
+
+    .achievements {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 720px) {
+    .first-site__descr {
+        width: 80%;
+    }
+    .descr ul {
+        width: 70%;
+    }
+    .first-site__img {
+        width: 70%;
+    }
+    .achievements {
+        min-height: 300px;
+    }
+    .phone {
+        font-size: 16px;
+    }
+    .main-btn {
+        width: 150px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header br {
+        display: block;
+    }
+    .header {
+        height: 87px;
+        width: 70%;
+    }
+    .descr ul {
+        width: 90%;
+    }
+    .first-site {
+        width: 100%;
+        min-height: 120px;
+    }
+    .title {
+        font-size: 20px;
+        line-height: 17px;
+    }
+    .first-site__descr {
+        min-height: 200px;
+    }
+    .descr {
+        margin-top: 20px;
+        min-height: 120px;
+        font-size: 12px;
+    }
+    a {
+        margin-top: 5px;
+    }
+    .contacts {
+        min-height: 150px;
+    }
+    .contacts-wrapper {
+        flex-direction: column;
+    }
+    .phone {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        font-size: 33px;
+    }
+    .first-site__descr {
+        min-height: 238px;
+    }
+}
